@@ -21,6 +21,12 @@ header .logo img {
 header .titular {
   margin: 0 80px 0 70px;
 }
+header .titular .filtro {
+  color: #22bce0;
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: none;
+}
 header .titular .titulo {
   font-size: 18px;
   font-weight: normal;
@@ -32,6 +38,11 @@ header .usuario {
   top: 0;
   right: 0;
 }
+header .usuario .avatar {
+  margin: 0.5em 2em 0 0;
+  position: relative;
+  z-index: 2;
+}
 header .usuario .avatar img {
   width: 50px;
   border-radius: 50%;
@@ -40,7 +51,9 @@ header .usuario .flechita {
   background: #dd4f24;
   color: #fff;
   display: block;
-  top: 0px;
+  padding: 3px;
+  top: 25px;
+  right: 10px;
   text-align: right;
   position: absolute;
   width: 2em;
