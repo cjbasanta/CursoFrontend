@@ -8,11 +8,13 @@ body
 	font-size 16px  
 
 header
-	background gris_oscuro 
+	background gris_oscuro
+	box-shadow 0 5px 0 rgba(0,0,0,0.2) 
 	color white
 	overflow hidden
 	padding 0.5em
 	position relative
+	z-index 1
 	//A B C D E F G H I J K L M N Ñ O P Q R S T U V W X Y Z
 	.logo
 		border-right 1px solid azul	
@@ -73,6 +75,16 @@ header
 //A B C D E F G H I J K L M N Ñ O P Q R S T U V W X Y Z    
 nav
 	background azul
+	border-left 15px solid white
+	position relative
+	
+	&:before
+		border-bottom 20px solid transparent
+		border-left 10px solid white
+		border-top 20px solid transparent
+		content ""
+		position absolute
+		
 	
 	.menu
 		height 40px

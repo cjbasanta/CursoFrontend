@@ -6,10 +6,12 @@ body {
 }
 header {
   background: #444;
+  box-shadow: 0 5px 0 rgba(0,0,0,0.2);
   color: #fff;
   overflow: hidden;
   padding: 0.5em;
   position: relative;
+  z-index: 1;
 }
 header .logo {
   border-right: 1px solid #22bce0;
@@ -72,6 +74,15 @@ header .usuario .flechita {
 }
 nav {
   background: #22bce0;
+  border-left: 15px solid #fff;
+  position: relative;
+}
+nav:before {
+  border-bottom: 20px solid transparent;
+  border-left: 10px solid #fff;
+  border-top: 20px solid transparent;
+  content: "";
+  position: absolute;
 }
 nav .menu {
   height: 40px;
