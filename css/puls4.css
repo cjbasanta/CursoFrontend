@@ -7,6 +7,7 @@ body {
 header {
   background: #444;
   color: #fff;
+  overflow: hidden;
   padding: 0.5em;
   position: relative;
 }
@@ -23,9 +24,20 @@ header .titular {
 }
 header .titular .filtro {
   color: #22bce0;
-  font-weight: bold;
+  font-size: 14px;
   font-style: italic;
+  font-weight: bold;
   text-decoration: none;
+}
+header .titular .publicar {
+  background: #dd4f24;
+  color: #fff;
+  float: right;
+  font-style: italic;
+  margin: -7px 0 0 0;
+  padding: 0.2em 0.5em;
+  text-decoration: none;
+  text-shadow: 2px 2px 0px #000;
 }
 header .titular .titulo {
   font-size: 18px;
@@ -60,4 +72,22 @@ header .usuario .flechita {
 }
 nav {
   background: #22bce0;
+}
+nav .menu {
+  height: 40px;
+  line-height: 40px;
+  margin: 0;
+  overflow-x: auto;
+  padding: 0;
+  white-space: nowrap;
+}
+nav .menu li {
+  display: inline-block;
+}
+nav .menu li a {
+  color: #fff;
+  display: block;
+  margin: 0 0.5em;
+  padding: 0 0.2em;
+  text-decoration: none;
 }
